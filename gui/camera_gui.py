@@ -41,7 +41,7 @@ class CameraFrame(ctk.CTkFrame):
             if ret:
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 img = Image.fromarray(frame)
-                img.thumbnail((800, 800), Image.Resampling.LANCZOS)
+                img.thumbnail((1000, 1000), Image.Resampling.LANCZOS)
                 imgtk = ImageTk.PhotoImage(img)
                 self.camera_label.configure(image=imgtk, text="")
                 self.camera_label.image = imgtk

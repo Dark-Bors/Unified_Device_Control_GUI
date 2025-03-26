@@ -5,6 +5,8 @@ from gui.camera_gui import CameraFrame
 from gui.servo_gui import ServoFrame
 from gui.magnet_gui import MagnetFrame
 from controllers.shared_serial import get_shared_serial_connection
+from gui.adu_gui import ADUFrame
+
 from utils.version import __version__
 print(f"App Version: {__version__}")
 
@@ -19,6 +21,9 @@ def launch_gui():
     app.geometry("1200x800")
     app.grid_columnconfigure(1, weight=1)
     app.grid_rowconfigure(1, weight=1)
+    # app = ctk.CTk()
+    app.title(f"Unified Device Control GUI - v{__version__}")
+
 
     # === Status Bar ===
     status_label = ctk.CTkLabel(app, text="Status: Ready", anchor="w")
@@ -37,9 +42,8 @@ def launch_gui():
     magnet_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
 
     # === ADU Frame ===
-    adu_frame = ctk.CTkFrame(app)
+    adu_frame = ADUFrame(app, serial_connection=shared_serial)      
     adu_frame.grid(row=2, column=1, padx=10, pady=10, sticky="nsew")
-    ctk.CTkLabel(adu_frame, text="ADU Control").pack(pady=5)
 
     # === Bottom Controls ===
     bottom_frame = ctk.CTkFrame(app)
