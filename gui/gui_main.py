@@ -5,6 +5,8 @@ from gui.camera_gui import CameraFrame
 from gui.servo_gui import ServoFrame
 from gui.magnet_gui import MagnetFrame
 from controllers.shared_serial import get_shared_serial_connection
+from utils.version import __version__
+print(f"App Version: {__version__}")
 
 
 shared_serial = get_shared_serial_connection()
