@@ -1,4 +1,15 @@
+# gui_main
+
 import customtkinter as ctk
+from gui.camera_gui import CameraFrame
+from gui.servo_gui import ServoFrame
+from gui.magnet_gui import MagnetFrame
+from controllers.shared_serial import get_shared_serial_connection
+
+
+shared_serial = get_shared_serial_connection()
+
+
 
 def launch_gui():
     app = ctk.CTk()
@@ -12,19 +23,16 @@ def launch_gui():
     status_label.grid(row=0, column=0, columnspan=2, sticky="ew", padx=10, pady=5)
 
     # === Camera Frame ===
-    camera_frame = ctk.CTkFrame(app)
+    camera_frame = CameraFrame(app)
     camera_frame.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
-    ctk.CTkLabel(camera_frame, text="Camera Control").pack(pady=5)
 
     # === Servo Frame ===
-    servo_frame = ctk.CTkFrame(app)
+    servo_frame = ServoFrame(app, serial_connection=shared_serial)
     servo_frame.grid(row=1, column=1, padx=10, pady=10, sticky="nsew")
-    ctk.CTkLabel(servo_frame, text="Servo Control").pack(pady=5)
 
     # === Magnet Frame ===
-    magnet_frame = ctk.CTkFrame(app)
+    magnet_frame = MagnetFrame(app, serial_connection=shared_serial)
     magnet_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
-    ctk.CTkLabel(magnet_frame, text="Magnet Control").pack(pady=5)
 
     # === ADU Frame ===
     adu_frame = ctk.CTkFrame(app)
