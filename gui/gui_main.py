@@ -42,7 +42,7 @@ def launch_gui():
     magnet_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
 
     # === ADU Frame ===
-    adu_frame = ADUFrame(app, serial_connection=shared_serial)      
+    adu_frame = ADUFrame(app)
     adu_frame.grid(row=2, column=1, padx=10, pady=10, sticky="nsew")
 
     # === Bottom Controls ===
