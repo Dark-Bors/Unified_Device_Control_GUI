@@ -15,9 +15,9 @@ class ServoFrame(ctk.CTkFrame):
 
         # Timer state variables
         self.timer_active = False
-        self.on_time = 10             # Seconds the servo stays ON
+        self.on_time = 5             # Seconds the servo stays ON
         self.off_time = 5             # Seconds the servo stays OFF
-        self.max_cycles = 20          # Maximum number of ON/OFF cycles
+        self.max_cycles = 4680          # Maximum number of ON/OFF cycles
 
         # === UI Elements ===
 

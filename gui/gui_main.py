@@ -31,23 +31,23 @@ def launch_gui():
 
     # === Camera Frame ===
     camera_frame = CameraFrame(app)
-    camera_frame.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
+    camera_frame.grid(row=1, column=0, padx=10, pady=10, sticky="nsew", rowspan=2, columnspan=2)
 
     # === Servo Frame ===
     servo_frame = ServoFrame(app, serial_connection=shared_serial)
-    servo_frame.grid(row=1, column=1, padx=10, pady=10, sticky="nsew")
+    servo_frame.grid(row=1, column=2, padx=10, pady=10, sticky="nsew")
 
     # === Magnet Frame ===
     magnet_frame = MagnetFrame(app, serial_connection=shared_serial)
-    magnet_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
+    magnet_frame.grid(row=3, column=0, padx=10, pady=10, sticky="nsew")
 
     # === ADU Frame ===
     adu_frame = ADUFrame(app)
-    adu_frame.grid(row=2, column=1, padx=10, pady=10, sticky="nsew")
+    adu_frame.grid(row=3, column=1, padx=10, pady=10, sticky="nsew")
 
     # === Bottom Controls ===
     bottom_frame = ctk.CTkFrame(app)
-    bottom_frame.grid(row=3, column=0, columnspan=2, padx=10, pady=10, sticky="ew")
+    bottom_frame.grid(row=4, column=0, columnspan=2, padx=10, pady=10, sticky="ew")
     ctk.CTkButton(bottom_frame, text="System Check").pack(side="left", padx=10, pady=10)
     ctk.CTkButton(bottom_frame, text="Exit", command=app.destroy).pack(side="right", padx=10, pady=10)
 
