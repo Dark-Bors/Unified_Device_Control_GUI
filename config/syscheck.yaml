@@ -1,0 +1,21 @@
+# System check steps
+mode: "manual"
+steps:
+  - type: "ping"
+  - type: "camera_check"
+    cams: ["cam_a", "cam_b"]
+  - type: "arduino_sequence"
+    sequence:
+      - send: "SERVO1 0"
+        verify: { method: "user_confirm", prompt: "Servo1 ~0° moved?" }
+      - send: "SERVO1 90"
+        verify: { method: "user_confirm", prompt: "Servo1 ~90° moved?" }
+  - type: "adu_check"
+    actions:
+      - do: "LIGHT_ON"
+        verify: { method: "user_confirm", prompt: "Light visibly ON?" }
+      - do: "USB_ON"
+        verify: { method: "user_confirm", prompt: "USB power ON?" }
+report:
+  save: true
+  path: "reports"

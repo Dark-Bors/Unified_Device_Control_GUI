@@ -1,0 +1,38 @@
+app:
+  name: "Unified Device Control GUI 2"
+  version_tag: "v0.4.0-alpha"
+  theme:
+    appearance: "dark"
+    color_theme: "dark-blue"
+
+serial:
+  baudrate: 9600
+  ping: "PING"
+  pong: "PONG"
+  eol: "\n"
+  scan_timeout_ms: 800
+  retries: 1
+
+cameras:
+  cam_a:
+    index: 0
+    enabled_on_start: false
+    width: 640
+    height: 480
+    target_fps: 20
+  cam_b:
+    index: 1
+    enabled_on_start: false
+    width: 640
+    height: 480
+    target_fps: 20
+  recording:
+    folder: "captures"
+    codec: "mp4v"
+
+logging:
+  level: "INFO"
+  folder: "logs"
+  rotate_mb: 10
+  keep_files: 10
+  also_log_serial: true

@@ -1,0 +1,35 @@
+# Command definitions
+arduino_buttons:
+  - label: "Capsule ON"
+    cmd: "C_ON"
+  - label: "Capsule OFF"
+    cmd: "C_OFF"
+
+  - label: "Link Device ON"
+    cmd: "LD_ON"
+  - label: "Link Device OFF"
+    cmd: "LD_OFF"
+
+  - label: "Motor: Start (cycle)"
+    cmd: "M_ON"
+  - label: "Motor: Start (constant)"
+    cmd: "M_ON_C"
+  - label: "Motor: STOP"
+    cmd: "M_OFF"
+
+  - label: "Version"
+    cmd: "VER"
+  - label: "Reset Arduino"
+    cmd: "RESET"
+  - label: "Help"
+    cmd: "HELP"
+
+adu_buttons:
+  - label: "USB ON"
+    action: "USB_ON"
+  - label: "USB OFF"
+    action: "USB_OFF"
+  - label: "Light ON"
+    action: "LIGHT_ON"
+  - label: "Light OFF"
+    action: "LIGHT_OFF"
