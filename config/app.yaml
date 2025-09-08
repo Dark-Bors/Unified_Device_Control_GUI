@@ -3,7 +3,6 @@
 
 app:
   name: "Unified Device Control GUI 2"
-  version_tag: "v0.4.0-alpha"
   theme:
     appearance: "dark"
     color_theme: "dark-blue"
@@ -24,6 +23,14 @@ cameras:
   recording:
     folder: "captures"
     codec: "mp4v"
+
+audio:
+  enabled: true
+  input_hint: "USB PnP Sound Device"   # matches your screenshot name
+  samplerate: 48000
+  channels: 1
+  blocksize: 1024
+  autostart_monitor: false
 
 
 logging:

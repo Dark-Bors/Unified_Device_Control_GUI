@@ -1,4 +1,0 @@
-2025-09-08 11:51:07,285 [INFO] ==== App start ====
-2025-09-08 11:51:07,285 [INFO] Log file: logs\app_20250908-115107.log
-2025-09-08 11:51:15,060 [INFO] [SERIAL] [CamB] opened via DSHOW idx=1
-2025-09-08 11:51:18,335 [INFO] [SERIAL] [CamA] opened via DSHOW idx=0

@@ -1,10 +1,12 @@
 # ui/main_window.py
 # Main CTk window
 
+from turtle import title
 import customtkinter as ctk
 import logging
 import os, sys
 
+from version import __version__
 from ui.panels.status_bar import StatusBar
 from ui.panels.camera_panel import DualCameraPanel
 from ui.panels.arduino_panel import ArduinoPanel
@@ -14,6 +16,8 @@ from core.serial_manager import SerialManager
 from core.device_scanner import DeviceScanner
 from core.event_bus import EventBus
 from core.adu_client import ADUClient
+# from core.syscheck import SysCheckRunner
+
 
 
 class MainWindow(ctk.CTk):
@@ -21,7 +25,7 @@ class MainWindow(ctk.CTk):
         super().__init__()
 
         # ---- window/meta ----
-        title = f'{app_cfg["app"]["name"]} – {app_cfg["app"]["version_tag"]}'
+        title = f'{app_cfg["app"]["name"]} – v{__version__}'
         self.title(title)
         self.geometry("1400x930")
         self.minsize(1200, 760)
@@ -105,10 +109,22 @@ class MainWindow(ctk.CTk):
         self.after(250, self.status.tick)
         self.after(200, self.cameras.apply_startup)
 
+        # SysCheck runner (not started yet)
+        self.bus.subscribe("syscheck:progress", self._on_syscheck_progress)
+        self.bus.subscribe("syscheck:done", self._on_syscheck_done)
+
     # ---------------- actions ----------------
     def on_syscheck(self):
-        logging.info("System Check clicked (stub for now)")
         self.status.set("System Check running…", color="yellow")
+        # Kick off the orchestrator
+        # runner = SysCheckRunner(
+        #     bus=self.bus,
+        #     serial_manager=self.serial,
+        #     adu_client=self.adu_client,
+        #     cameras_cfg=self.cameras.cfg if hasattr(self.cameras, "cfg") else self.app_cfg.get("cameras", {}),
+        #     syscheck_yaml="config/syscheck.yaml",
+        # )
+        # runner.run_async()
 
     # ---------------- bus handlers ----------------
     def _on_conn_state(self, payload):
@@ -121,3 +137,16 @@ class MainWindow(ctk.CTk):
         msg = f"Scan complete. Best: {best or 'None'}"
         self.status.set(msg, color="blue")
         self.log_panel.append(f"[SCAN] {msg}")
+
+    def _on_syscheck_progress(self, payload):
+        step = payload.get("step")
+        stype = payload.get("type")
+        self.status.set(f"System Check: step {step} — {stype}", color="yellow")
+
+    def _on_syscheck_done(self, payload):
+        ok = bool(payload.get("ok"))
+        path = payload.get("report_path")
+        txt = f"System Check {'OK' if ok else 'FAILED'}"
+        if path:
+            self.log_panel.append(f"{txt}. Report: {path}")
+        self.status.set(txt, color="green" if ok else "red")

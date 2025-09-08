@@ -10,36 +10,43 @@ class ADUPanel(ctk.CTkFrame):
         self.bus = bus
         self.adu = adu_client
 
-        ctk.CTkLabel(self, text="ADU Control").pack(pady=(8,4))
+        # Title
+        ctk.CTkLabel(self, text="ADU Control").pack(pady=(8, 4))
 
-        # Row: Connect / Disconnect
-        row_conn = ctk.CTkFrame(self); row_conn.pack(fill="x", padx=8, pady=(0,6))
-        ctk.CTkButton(row_conn, text="Connect", width=100, command=self._connect).pack(side="left", padx=(0,6))
-        ctk.CTkButton(row_conn, text="Disconnect", width=100, command=self._disconnect).pack(side="left")
+        # ---- Connect / Disconnect row (transparent container, no dark bar) ----
+        row_conn = ctk.CTkFrame(self, fg_color="transparent")
+        row_conn.pack(padx=8, pady=(0, 2), anchor="center")  # align center
+        ctk.CTkButton(row_conn, text="Connect",    width=200, command=self._connect).pack(side="left", padx=(0, 6))
+        ctk.CTkButton(row_conn, text="Disconnect", width=200, command=self._disconnect).pack(side="right", padx=(8, 0))
 
-        # Status badge directly under the buttons & label (as requested)
+        # ---- Status badge directly under the buttons ----
         self.state_var = ctk.StringVar(value="DISCONNECTED")
         self.state_lbl = ctk.CTkLabel(self, textvariable=self.state_var,
                                       fg_color="#B00020", text_color="white",
                                       corner_radius=6, padx=8, pady=4)
-        self.state_lbl.pack(pady=(6,8))
+        self.state_lbl.pack(pady=(6, 8))
 
-        # Actions in a 2×2 grid:
-        # USB ON | Light ON
-        # USB OFF| Light OFF
+        # ---- Actions in a compact 2×2 grid ----
         with open(cfg_path, "r", encoding="utf-8") as f:
             cfg = yaml.safe_load(f) or {}
         mapping = {b["label"]: b["action"] for b in cfg.get("adu_buttons", [])}
 
-        grid = ctk.CTkFrame(self); grid.pack(padx=8, pady=4)
+        grid = ctk.CTkFrame(self, fg_color="transparent")
+        grid.pack(padx=8, pady=4, fill="x")
+
+        # make both columns same width
+        grid.grid_columnconfigure(0, weight=1, uniform="adu")
+        grid.grid_columnconfigure(1, weight=1, uniform="adu")
+
         def button(label, r, c):
             ctk.CTkButton(grid, text=label,
                           command=lambda act=mapping.get(label): self._do(act)
                           ).grid(row=r, column=c, padx=4, pady=4, sticky="ew")
 
-        button("USB ON",  0, 0)
-        button("Light ON",0, 1)
-        button("USB OFF", 1, 0)
+        # exact order you requested
+        button("USB ON",   0, 0)
+        button("Light ON", 0, 1)
+        button("USB OFF",  1, 0)
         button("Light OFF",1, 1)
 
     # --------- actions ----------

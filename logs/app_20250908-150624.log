@@ -1,6 +1,0 @@
-2025-09-08 15:06:24,524 [INFO] ==== App start ====
-2025-09-08 15:06:24,524 [INFO] Log file: logs\app_20250908-150624.log
-2025-09-08 15:06:27,064 [INFO] [SERIAL] <UDC app> ADU connect error: No module named 'ontrak'
-2025-09-08 15:06:27,065 [INFO] [SERIAL] <UDC app> ADU connect failed
-2025-09-08 15:06:29,270 [INFO] [SERIAL] <UDC app> ADU connect error: No module named 'ontrak'
-2025-09-08 15:06:29,271 [INFO] [SERIAL] <UDC app> ADU connect failed

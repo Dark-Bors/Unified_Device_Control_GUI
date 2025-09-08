@@ -1,0 +1,6 @@
+[2025-09-08 16:03:16] Starting System Check…
+[2025-09-08 16:03:16] Step 1/4: ping
+[2025-09-08 16:03:16] Serial not connected; running quick scan attempt.
+[2025-09-08 16:03:16] No active port to ping.
+[2025-09-08 16:03:16] Stopping early due to failure.
+[2025-09-08 16:03:16] System Check finished in 0s. Result: FAIL

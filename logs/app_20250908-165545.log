@@ -1,0 +1,129 @@
+2025-09-08 16:55:45,887 [INFO] ==== App start ====
+2025-09-08 16:55:45,887 [INFO] Log file: logs\app_20250908-165545.log
+2025-09-08 16:56:00,197 [INFO] [SERIAL] [CamA] opened via DSHOW idx=0
+2025-09-08 16:56:02,645 [INFO] [SERIAL] [CamB] opened via DSHOW idx=1
+2025-09-08 16:56:05,878 [INFO] [SERIAL] [AUDIO] input=Microphone (4- C270 HD WEBCAM) (idx=1), output=Speakers (Realtek(R) Audio) (idx=5)
+2025-09-08 16:56:05,884 [INFO] [SERIAL] [AUDIO] monitor started
+2025-09-08 16:56:36,076 [INFO] [SERIAL] <UDC app> Scanning ports…
+2025-09-08 16:56:36,086 [INFO] [SERIAL] <UDC app> Found 8 port(s). Probing with PING…
+2025-09-08 16:56:36,091 [INFO] [SERIAL] <UDC app> Probing COM6 | desc='Arduino Uno (COM6)' loc='1-3.1.4' hwid='USB VID:PID=2341:0043 SER=342393135353517120A1 LOCATION=1-3.1.4'
+2025-09-08 16:56:38,172 [INFO] [SERIAL] <UDC app> Selected COM6 — PONG RFBOX FW v1.0.0 (Sep  8 2025 11:38:13) [V&V RF_Box num 6] scan
+2025-09-08 16:56:38,190 [INFO] [SERIAL] [SCAN] Scan complete. Best: COM6
+2025-09-08 16:56:40,196 [INFO] [SERIAL] <UDC app> Scan: best=COM6 | ports=COM6, COM16, COM17, COM18, COM19, COM23, COM24, COM3
+2025-09-08 16:56:40,197 [INFO] [SERIAL] <UDC app> Auto-connect -> COM6
+2025-09-08 16:56:40,238 [INFO] [SERIAL] <UDC app> Serial monitor started on COM6
+2025-09-08 16:56:40,239 [INFO] [SERIAL] <UDC app> Connect COM6 -> OK
+2025-09-08 16:56:58,594 [INFO] [SERIAL] <UDC app> ADU connected (product_id=218)
+2025-09-08 16:56:58,600 [INFO] [SERIAL] <UDC app> ADU connected
+2025-09-08 16:56:59,870 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 16:57:19,904 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 16:57:35,782 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 16:57:35,812 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 16:57:36,732 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 16:57:39,934 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 16:57:52,564 [INFO] [SERIAL] <UDC app> → M_ON_C
+2025-09-08 16:57:52,602 [INFO] [SERIAL] <serial monitor> Received command: M_ON_C
+2025-09-08 16:57:52,644 [INFO] [SERIAL] <serial monitor> Constant movement. step delay=20 mSec.
+2025-09-08 16:57:56,652 [INFO] [SERIAL] <UDC app> → LD_ON
+2025-09-08 16:57:56,702 [INFO] [SERIAL] <serial monitor> Received command: M_ON_CLD_ON
+2025-09-08 16:57:56,719 [INFO] [SERIAL] <serial monitor> Unknown command
+2025-09-08 16:58:02,645 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 10 seconds.
+2025-09-08 16:58:11,981 [INFO] [SERIAL] <UDC app> → LD_ON
+2025-09-08 16:58:12,025 [INFO] [SERIAL] <serial monitor> Received command: LD_ON
+2025-09-08 16:58:12,943 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to minAngle
+2025-09-08 16:58:12,981 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 20 seconds.
+2025-09-08 16:58:22,982 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 30 seconds.
+2025-09-08 16:58:32,877 [INFO] [SERIAL] [AUDIO] monitor stopped
+2025-09-08 16:58:33,018 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 40 seconds.
+2025-09-08 16:58:34,142 [INFO] [SERIAL] [AUDIO] input=Microphone (4- C270 HD WEBCAM) (idx=1), output=Speakers (Realtek(R) Audio) (idx=5)
+2025-09-08 16:58:34,157 [INFO] [SERIAL] [AUDIO] monitor started
+2025-09-08 16:58:43,047 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 50 seconds.
+2025-09-08 16:58:46,128 [INFO] [SERIAL] [AUDIO] monitor stopped
+2025-09-08 16:58:47,140 [INFO] [SERIAL] [AUDIO] input=Microphone (4- C270 HD WEBCAM) (idx=1), output=Speakers (Realtek(R) Audio) (idx=5)
+2025-09-08 16:58:47,142 [INFO] [SERIAL] [AUDIO] monitor started
+2025-09-08 16:58:53,080 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 60 seconds.
+2025-09-08 16:58:54,132 [INFO] [SERIAL] [AUDIO] monitor stopped
+2025-09-08 16:59:00,845 [INFO] [SERIAL] <UDC app> → VER
+2025-09-08 16:59:00,893 [INFO] [SERIAL] <serial monitor> Received command: VER
+2025-09-08 16:59:00,966 [INFO] [SERIAL] <serial monitor> Code Version: FW v1.0.0 (Sep  8 2025 11:38:13) [V&V RF_Box num 6]
+2025-09-08 16:59:03,104 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 70 seconds.
+2025-09-08 16:59:13,139 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 80 seconds.
+2025-09-08 16:59:15,046 [INFO] [SERIAL] <UDC app> → HELP
+2025-09-08 16:59:15,093 [INFO] [SERIAL] <serial monitor> Received command: HELP
+2025-09-08 16:59:15,118 [INFO] [SERIAL] <serial monitor> Available Commands:
+2025-09-08 16:59:15,154 [INFO] [SERIAL] <serial monitor> C_ON       - Turn ON the Capsule.
+2025-09-08 16:59:15,196 [INFO] [SERIAL] <serial monitor> C_OFF      - Turn OFF the Capsule.
+2025-09-08 16:59:15,236 [INFO] [SERIAL] <serial monitor> LD_ON      - Turn ON the Link Device.
+2025-09-08 16:59:15,280 [INFO] [SERIAL] <serial monitor> LD_OFF     - Turn OFF the Link Device.
+2025-09-08 16:59:15,362 [INFO] [SERIAL] <serial monitor> M_ON_C     - Start constant movement step delay=20 mSec. Stop after 31 days
+2025-09-08 16:59:15,434 [INFO] [SERIAL] <serial monitor> M_ON       - Start the stepper motor. MOV=5.4[Sec], STOP=5[Sec]
+2025-09-08 16:59:15,474 [INFO] [SERIAL] <serial monitor> M_OFF      - Stop the stepper motor.
+2025-09-08 16:59:15,530 [INFO] [SERIAL] <serial monitor> VER        - Print the code version.
+2025-09-08 16:59:15,581 [INFO] [SERIAL] <serial monitor> RESET      - Reset the Arduino and stop the stepper motor.
+2025-09-08 16:59:15,625 [INFO] [SERIAL] <serial monitor> HELP       - Display this help message.
+2025-09-08 16:59:15,687 [INFO] [SERIAL] <serial monitor> PING [txt] - Reply with 'PONG RFBOX <version> [txt]'.
+2025-09-08 16:59:23,161 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 90 seconds.
+2025-09-08 16:59:23,765 [INFO] [SERIAL] <UDC app> → PING
+2025-09-08 16:59:23,854 [INFO] [SERIAL] <serial monitor> PONG RFBOX FW v1.0.0 (Sep  8 2025 11:38:13) [V&V RF_Box num 6]
+2025-09-08 16:59:33,197 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 100 seconds.
+2025-09-08 16:59:43,236 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 110 seconds.
+2025-09-08 16:59:45,016 [INFO] [SERIAL] <UDC app> Disconnected
+2025-09-08 16:59:50,584 [INFO] [SERIAL] <UDC app> Serial monitor started on COM6
+2025-09-08 16:59:50,586 [INFO] [SERIAL] <UDC app> Connect COM6 -> OK
+2025-09-08 16:59:59,081 [INFO] [SERIAL] <ADU> TX SK3 -> OK
+2025-09-08 16:59:59,092 [INFO] [SERIAL] <UDC app> [ADU] USB_ON -> OK
+2025-09-08 17:00:02,149 [INFO] [SERIAL] [AUDIO] input=Microphone (4- C270 HD WEBCAM) (idx=1), output=Speakers (Realtek(R) Audio) (idx=5)
+2025-09-08 17:00:02,156 [INFO] [SERIAL] [AUDIO] monitor started
+2025-09-08 17:00:10,200 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 0
+2025-09-08 17:00:11,980 [INFO] [SERIAL] <ADU> TX SK1 -> OK
+2025-09-08 17:00:11,983 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_ON -> OK
+2025-09-08 17:00:12,876 [INFO] [SERIAL] <ADU> TX RK1 -> OK
+2025-09-08 17:00:12,880 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_OFF -> OK
+2025-09-08 17:00:21,851 [INFO] [SERIAL] <UDC app> → M_OFF
+2025-09-08 17:00:21,885 [INFO] [SERIAL] <serial monitor> Received command: M_OFF
+2025-09-08 17:00:21,910 [INFO] [SERIAL] <serial monitor> Stepper motor stopped
+2025-09-08 17:00:23,918 [INFO] [SERIAL] <UDC app> → M_ON_C
+2025-09-08 17:00:23,953 [INFO] [SERIAL] <serial monitor> Received command: M_ON_C
+2025-09-08 17:00:23,994 [INFO] [SERIAL] <serial monitor> Constant movement. step delay=20 mSec.
+2025-09-08 17:00:34,000 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 10 seconds.
+2025-09-08 17:00:35,295 [INFO] [SERIAL] <ADU> TX SK1 -> OK
+2025-09-08 17:00:35,299 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_ON -> OK
+2025-09-08 17:00:40,699 [INFO] [SERIAL] <UDC app> Disconnected
+2025-09-08 17:00:46,547 [INFO] [SERIAL] <UDC app> Serial monitor started on COM6
+2025-09-08 17:00:46,549 [INFO] [SERIAL] <UDC app> Connect COM6 -> OK
+2025-09-08 17:01:04,478 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 17:01:04,511 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 17:01:05,425 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 17:01:06,170 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 0
+2025-09-08 17:01:26,199 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 0
+2025-09-08 17:01:32,767 [INFO] [SERIAL] <UDC app> → LD_OFF
+2025-09-08 17:01:32,801 [INFO] [SERIAL] <serial monitor> Received command: LD_OFF
+2025-09-08 17:01:33,719 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to maxAngle
+2025-09-08 17:01:36,352 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 17:01:36,387 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 17:01:37,297 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 17:01:37,901 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 17:01:37,937 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 17:01:38,852 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 17:01:43,934 [INFO] [SERIAL] <ADU> TX RK3 -> OK
+2025-09-08 17:01:43,936 [INFO] [SERIAL] <UDC app> [ADU] USB_OFF -> OK
+2025-09-08 17:01:46,235 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 17:01:47,029 [INFO] [SERIAL] <ADU> TX RK1 -> OK
+2025-09-08 17:01:47,033 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_OFF -> OK
+2025-09-08 17:01:48,053 [INFO] [SERIAL] <ADU> TX SK1 -> OK
+2025-09-08 17:01:48,056 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_ON -> OK
+2025-09-08 17:01:57,147 [INFO] [SERIAL] <ADU> TX SK3 -> OK
+2025-09-08 17:01:57,149 [INFO] [SERIAL] <UDC app> [ADU] USB_ON -> OK
+2025-09-08 17:01:58,325 [INFO] [SERIAL] <ADU> TX RK3 -> OK
+2025-09-08 17:01:58,328 [INFO] [SERIAL] <UDC app> [ADU] USB_OFF -> OK
+2025-09-08 17:02:06,260 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 17:02:26,292 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 17:02:36,344 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 17:02:36,376 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 17:02:37,290 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 17:02:39,662 [INFO] [SERIAL] <ADU> TX SK3 -> OK
+2025-09-08 17:02:39,663 [INFO] [SERIAL] <UDC app> [ADU] USB_ON -> OK
+2025-09-08 17:02:41,838 [INFO] [SERIAL] <ADU> TX SK1 -> OK
+2025-09-08 17:02:41,841 [INFO] [SERIAL] <UDC app> [ADU] LIGHT_ON -> OK
+2025-09-08 17:02:46,322 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 17:03:06,355 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45

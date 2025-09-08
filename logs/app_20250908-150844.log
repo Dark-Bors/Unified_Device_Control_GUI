@@ -1,5 +1,0 @@
-2025-09-08 15:08:44,907 [INFO] ==== App start ====
-2025-09-08 15:08:44,907 [INFO] Log file: logs\app_20250908-150844.log
-2025-09-08 15:08:46,701 [INFO] [SERIAL] <UDC app> ADU devices: PID=218 SN=b'E21321'
-2025-09-08 15:08:46,704 [INFO] [SERIAL] <UDC app> ADU connect failed: serial E21321 not found
-2025-09-08 15:08:46,707 [INFO] [SERIAL] <UDC app> ADU connect failed
