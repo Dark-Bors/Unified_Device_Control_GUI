@@ -1,4 +1,5 @@
 # Thread-safe pub/sub
+# core/event_bus.py
 import queue, threading
 
 class EventBus:

@@ -1,4 +1,5 @@
 # Command definitions
+# commands.yaml
 arduino_buttons:
   - label: "Capsule ON"
     cmd: "C_ON"

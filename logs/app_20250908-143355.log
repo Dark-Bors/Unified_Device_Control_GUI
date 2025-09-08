@@ -1,0 +1,21 @@
+2025-09-08 14:33:55,710 [INFO] ==== App start ====
+2025-09-08 14:33:55,711 [INFO] Log file: logs\app_20250908-143355.log
+2025-09-08 14:33:57,724 [INFO] [SERIAL] <UDC app> Loaded ADU DLL: adu/ontrak\AduHid64.dll
+2025-09-08 14:33:57,727 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:33:57,731 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:34:03,000 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:34:03,006 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:34:05,058 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:34:05,064 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:34:06,648 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:07,764 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:08,096 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:09,098 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 14:34:10,969 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 14:34:11,343 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 14:34:11,711 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 14:34:12,203 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 14:34:17,503 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:19,370 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:19,843 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:34:20,168 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available

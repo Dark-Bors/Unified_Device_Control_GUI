@@ -1,4 +1,5 @@
 # Serial monitor panel
+# log_panel.py
 import customtkinter as ctk
 import time, logging
 
@@ -32,3 +33,4 @@ class LogPanel(ctk.CTkFrame):
         path = os.path.join("logs", f"user_saved_{time.strftime('%Y%m%d-%H%M%S')}.txt")
         with open(path, "w", encoding="utf-8") as f:
             f.write(self.txt.get("1.0","end").strip())
+

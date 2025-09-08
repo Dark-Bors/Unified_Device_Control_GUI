@@ -1,0 +1,9 @@
+2025-09-08 14:39:33,192 [INFO] ==== App start ====
+2025-09-08 14:39:33,193 [INFO] Log file: logs\app_20250908-143933.log
+2025-09-08 14:39:35,737 [INFO] [SERIAL] <UDC app> Loaded ADU DLL: adu/ontrak\AduHid64.dll
+2025-09-08 14:39:35,742 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:39:35,745 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:39:38,442 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:39:38,447 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:39:38,718 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:39:38,726 [INFO] [SERIAL] <UDC app> ADU connect failed

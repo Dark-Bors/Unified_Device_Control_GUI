@@ -1,0 +1,40 @@
+2025-09-08 12:15:23,476 [INFO] ==== App start ====
+2025-09-08 12:15:23,477 [INFO] Log file: logs\app_20250908-121523.log
+2025-09-08 12:15:30,637 [INFO] [SERIAL] <UDC app> Found 7 port(s). Probing with PING…
+2025-09-08 12:15:30,640 [INFO] [SERIAL] <UDC app> Probing COM3 | desc='Arduino Uno (COM3)' loc='1-3.1.1' hwid='USB VID:PID=2341:0043 SER=85935333337351C072F0 LOCATION=1-3.1.1'
+2025-09-08 12:15:30,641 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2025-09-08 12:15:30,642 [INFO] [SERIAL] <UDC app> Probing COM16 | desc='Standard Serial over Bluetooth link (COM16)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000000'
+2025-09-08 12:15:35,823 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM16: could not open port 'COM16': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:15:35,827 [INFO] [SERIAL] <UDC app> Probing COM17 | desc='Standard Serial over Bluetooth link (COM17)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000001'
+2025-09-08 12:15:38,276 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM17: Write timeout
+2025-09-08 12:15:38,277 [INFO] [SERIAL] <UDC app> Probing COM18 | desc='Standard Serial over Bluetooth link (COM18)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000002'
+2025-09-08 12:15:40,737 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM18: Write timeout
+2025-09-08 12:15:40,739 [INFO] [SERIAL] <UDC app> Probing COM19 | desc='Standard Serial over Bluetooth link (COM19)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000001'
+2025-09-08 12:15:43,243 [INFO] [SERIAL] <UDC app> Scan already running.
+2025-09-08 12:15:45,931 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM19: could not open port 'COM19': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:15:45,934 [INFO] [SERIAL] <UDC app> Probing COM23 | desc='Standard Serial over Bluetooth link (COM23)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000000'
+2025-09-08 12:15:48,387 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM23: Write timeout
+2025-09-08 12:15:48,390 [INFO] [SERIAL] <UDC app> Probing COM24 | desc='Standard Serial over Bluetooth link (COM24)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000002'
+2025-09-08 12:15:53,572 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM24: could not open port 'COM24': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:15:53,605 [INFO] [SERIAL] [SCAN] Scan complete. Best: None
+2025-09-08 12:15:54,636 [INFO] [SERIAL] [CamB] opened via DSHOW idx=1
+2025-09-08 12:15:57,444 [INFO] [SERIAL] [CamA] opened via DSHOW idx=0
+2025-09-08 12:18:12,352 [INFO] [SERIAL] <UDC app> [ERR] write failed (not connected)
+2025-09-08 12:18:16,330 [INFO] [SERIAL] <UDC app> Found 8 port(s). Probing with PING…
+2025-09-08 12:18:16,332 [INFO] [SERIAL] <UDC app> Probing COM3 | desc='Arduino Uno (COM3)' loc='1-3.1.1' hwid='USB VID:PID=2341:0043 SER=85935333337351C072F0 LOCATION=1-3.1.1'
+2025-09-08 12:18:16,335 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2025-09-08 12:18:16,338 [INFO] [SERIAL] <UDC app> Probing COM3 | desc='Arduino Uno (COM3)' loc='1-3.1.4' hwid='USB VID:PID=2341:0043 SER=342393135353517120A1 LOCATION=1-3.1.4'
+2025-09-08 12:18:16,341 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM3: could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5)
+2025-09-08 12:18:16,343 [INFO] [SERIAL] <UDC app> Probing COM16 | desc='Standard Serial over Bluetooth link (COM16)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000000'
+2025-09-08 12:18:21,521 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM16: could not open port 'COM16': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:18:21,523 [INFO] [SERIAL] <UDC app> Probing COM17 | desc='Standard Serial over Bluetooth link (COM17)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000001'
+2025-09-08 12:18:23,974 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM17: Write timeout
+2025-09-08 12:18:23,980 [INFO] [SERIAL] <UDC app> Probing COM18 | desc='Standard Serial over Bluetooth link (COM18)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000002'
+2025-09-08 12:18:26,428 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM18: Write timeout
+2025-09-08 12:18:26,431 [INFO] [SERIAL] <UDC app> Probing COM19 | desc='Standard Serial over Bluetooth link (COM19)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000001'
+2025-09-08 12:18:31,613 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM19: could not open port 'COM19': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:18:31,615 [INFO] [SERIAL] <UDC app> Probing COM23 | desc='Standard Serial over Bluetooth link (COM23)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000000'
+2025-09-08 12:18:34,065 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM23: Write timeout
+2025-09-08 12:18:34,069 [INFO] [SERIAL] <UDC app> Probing COM24 | desc='Standard Serial over Bluetooth link (COM24)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000002'
+2025-09-08 12:18:39,250 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM24: could not open port 'COM24': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 12:18:39,260 [INFO] [SERIAL] [SCAN] Scan complete. Best: None

@@ -1,0 +1,19 @@
+2025-09-08 14:32:44,088 [INFO] ==== App start ====
+2025-09-08 14:32:44,089 [INFO] Log file: logs\app_20250908-143244.log
+2025-09-08 14:32:48,269 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:32:52,991 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:32:53,383 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:32:53,565 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:32:53,743 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:33:01,536 [INFO] [SERIAL] [CamB] opened via DSHOW idx=1
+2025-09-08 14:33:04,787 [INFO] [SERIAL] [CamA] opened via DSHOW idx=0
+2025-09-08 14:33:26,246 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:33:28,215 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:33:29,334 [INFO] [SERIAL] <UDC app> [ERR] Scanner not available
+2025-09-08 14:33:32,389 [INFO] [SERIAL] <UDC app> Loaded ADU DLL: adu/ontrak\AduHid64.dll
+2025-09-08 14:33:32,407 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:33:32,408 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:33:35,439 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:33:35,452 [INFO] [SERIAL] <UDC app> ADU connect failed
+2025-09-08 14:33:36,582 [INFO] [SERIAL] <UDC app> ADU connect failed (product_id=21321)
+2025-09-08 14:33:36,599 [INFO] [SERIAL] <UDC app> ADU connect failed

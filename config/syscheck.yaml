@@ -1,4 +1,5 @@
 # System check steps
+# syscheck.yaml
 mode: "manual"
 steps:
   - type: "ping"

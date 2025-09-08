@@ -1,0 +1,116 @@
+2025-09-08 11:54:36,052 [INFO] ==== App start ====
+2025-09-08 11:54:36,052 [INFO] Log file: logs\app_20250908-115436.log
+2025-09-08 11:54:48,248 [INFO] [SERIAL] [CamB] opened via DSHOW idx=1
+2025-09-08 11:54:50,941 [INFO] [SERIAL] [CamA] opened via DSHOW idx=0
+2025-09-08 11:54:55,140 [INFO] [SERIAL] <UDC app> Found 7 port(s). Probing with PING…
+2025-09-08 11:54:55,145 [INFO] [SERIAL] <UDC app> Probing COM16 | desc='Standard Serial over Bluetooth link (COM16)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000000'
+2025-09-08 11:55:00,329 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM16: could not open port 'COM16': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 11:55:00,331 [INFO] [SERIAL] <UDC app> Probing COM19 | desc='Standard Serial over Bluetooth link (COM19)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000001'
+2025-09-08 11:55:05,453 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM19: could not open port 'COM19': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 11:55:05,455 [INFO] [SERIAL] <UDC app> Probing COM24 | desc='Standard Serial over Bluetooth link (COM24)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\7&2064BD9C&0&08EF3B69E9AA_C00000002'
+2025-09-08 11:55:10,577 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM24: could not open port 'COM24': OSError(22, 'The semaphore timeout period has expired.', None, 121)
+2025-09-08 11:55:10,578 [INFO] [SERIAL] <UDC app> Probing COM23 | desc='Standard Serial over Bluetooth link (COM23)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000000'
+2025-09-08 11:55:13,031 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM23: Write timeout
+2025-09-08 11:55:13,037 [INFO] [SERIAL] <UDC app> Probing COM17 | desc='Standard Serial over Bluetooth link (COM17)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000001'
+2025-09-08 11:55:15,483 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM17: Write timeout
+2025-09-08 11:55:15,487 [INFO] [SERIAL] <UDC app> Probing COM18 | desc='Standard Serial over Bluetooth link (COM18)' loc='None' hwid='BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&2064BD9C&0&000000000000_00000002'
+2025-09-08 11:55:17,934 [INFO] [SERIAL] <UDC app> Open/Probe failed on COM18: Write timeout
+2025-09-08 11:55:17,936 [INFO] [SERIAL] <UDC app> Probing COM3 | desc='Arduino Uno (COM3)' loc='1-3.1.4' hwid='USB VID:PID=2341:0043 SER=342393135353517120A1 LOCATION=1-3.1.4'
+2025-09-08 11:55:20,021 [INFO] [SERIAL] <UDC app> Selected COM3 — PONG RFBOX FW v1.0.0 (Sep  8 2025 11:38:13) [V&V RF_Box num 6] scan
+2025-09-08 11:55:20,028 [INFO] [SERIAL] [SCAN] Scan complete. Best: COM3
+2025-09-08 11:55:22,127 [INFO] [SERIAL] <UDC app> Serial monitor started on COM3
+2025-09-08 11:55:34,963 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 11:55:34,995 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 11:55:35,909 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 11:55:41,717 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:55:47,450 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 11:55:47,484 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 11:55:48,399 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 11:55:50,881 [INFO] [SERIAL] <UDC app> → LD_ON
+2025-09-08 11:55:50,919 [INFO] [SERIAL] <serial monitor> Received command: LD_ON
+2025-09-08 11:55:51,830 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to minAngle
+2025-09-08 11:55:52,922 [INFO] [SERIAL] <UDC app> → LD_OFF
+2025-09-08 11:55:52,960 [INFO] [SERIAL] <serial monitor> Received command: LD_OFF
+2025-09-08 11:55:53,873 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to maxAngle
+2025-09-08 11:55:55,185 [INFO] [SERIAL] <UDC app> → M_ON
+2025-09-08 11:55:55,217 [INFO] [SERIAL] <serial monitor> Received command: M_ON
+2025-09-08 11:55:55,242 [INFO] [SERIAL] <serial monitor> Stepper motor started
+2025-09-08 11:55:59,865 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 11:55:59,904 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 11:56:00,815 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 11:56:05,657 [INFO] [SERIAL] [ADU] LIGHT_OFF (stub)
+2025-09-08 11:56:06,714 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:56:27,912 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:56:49,107 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:57:10,303 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:57:31,498 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:57:52,691 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 45
+2025-09-08 11:58:00,625 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 11:58:01,294 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 11:58:02,206 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 11:58:05,686 [INFO] [SERIAL] <UDC app> → LD_ON
+2025-09-08 11:58:05,763 [INFO] [SERIAL] <serial monitor> Received command: LD_ON
+2025-09-08 11:58:06,679 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to minAngle
+2025-09-08 11:58:09,559 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 11:58:09,623 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 11:58:10,537 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 11:58:16,598 [INFO] [SERIAL] <serial monitor> Capsule: 45	LD: 0
+2025-09-08 11:58:19,662 [INFO] [SERIAL] <UDC app> → M_OFF
+2025-09-08 11:58:19,732 [INFO] [SERIAL] <serial monitor> Received command: M_OFF
+2025-09-08 11:58:19,752 [INFO] [SERIAL] <serial monitor> Stepper motor stopped
+2025-09-08 11:58:22,195 [INFO] [SERIAL] <UDC app> → M_ON_C
+2025-09-08 11:58:22,230 [INFO] [SERIAL] <serial monitor> Received command: M_ON_C
+2025-09-08 11:58:22,271 [INFO] [SERIAL] <serial monitor> Constant movement. step delay=20 mSec.
+2025-09-08 11:58:24,704 [INFO] [SERIAL] <UDC app> → HELP
+2025-09-08 11:58:24,745 [INFO] [SERIAL] <serial monitor> Received command: M_ON_CHELP
+2025-09-08 11:58:24,762 [INFO] [SERIAL] <serial monitor> Unknown command
+2025-09-08 11:58:30,853 [INFO] [SERIAL] <UDC app> → HELP
+2025-09-08 11:58:30,898 [INFO] [SERIAL] <serial monitor> Received command: HELP
+2025-09-08 11:58:30,921 [INFO] [SERIAL] <serial monitor> Available Commands:
+2025-09-08 11:58:30,962 [INFO] [SERIAL] <serial monitor> C_ON       - Turn ON the Capsule.
+2025-09-08 11:58:31,001 [INFO] [SERIAL] <serial monitor> C_OFF      - Turn OFF the Capsule.
+2025-09-08 11:58:31,043 [INFO] [SERIAL] <serial monitor> LD_ON      - Turn ON the Link Device.
+2025-09-08 11:58:31,085 [INFO] [SERIAL] <serial monitor> LD_OFF     - Turn OFF the Link Device.
+2025-09-08 11:58:31,167 [INFO] [SERIAL] <serial monitor> M_ON_C     - Start constant movement step delay=20 mSec. Stop after 31 days
+2025-09-08 11:58:31,236 [INFO] [SERIAL] <serial monitor> M_ON       - Start the stepper motor. MOV=5.4[Sec], STOP=5[Sec]
+2025-09-08 11:58:31,283 [INFO] [SERIAL] <serial monitor> M_OFF      - Stop the stepper motor.
+2025-09-08 11:58:31,323 [INFO] [SERIAL] <serial monitor> VER        - Print the code version.
+2025-09-08 11:58:31,389 [INFO] [SERIAL] <serial monitor> RESET      - Reset the Arduino and stop the stepper motor.
+2025-09-08 11:58:31,435 [INFO] [SERIAL] <serial monitor> HELP       - Display this help message.
+2025-09-08 11:58:31,491 [INFO] [SERIAL] <serial monitor> PING [txt] - Reply with 'PONG RFBOX <version> [txt]'.
+2025-09-08 11:58:32,265 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 10 seconds.
+2025-09-08 11:58:42,300 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 20 seconds.
+2025-09-08 11:58:46,581 [INFO] [SERIAL] <UDC app> → VER
+2025-09-08 11:58:46,622 [INFO] [SERIAL] <serial monitor> Received command: VER
+2025-09-08 11:58:46,690 [INFO] [SERIAL] <serial monitor> Code Version: FW v1.0.0 (Sep  8 2025 11:38:13) [V&V RF_Box num 6]
+2025-09-08 11:58:52,323 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 30 seconds.
+2025-09-08 11:58:57,121 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 11:58:57,169 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 11:58:58,082 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 11:58:59,698 [INFO] [SERIAL] <UDC app> → LD_OFF
+2025-09-08 11:58:59,740 [INFO] [SERIAL] <serial monitor> Received command: LD_OFF
+2025-09-08 11:59:00,653 [INFO] [SERIAL] <serial monitor> Link Device Servo moved to maxAngle
+2025-09-08 11:59:01,620 [INFO] [SERIAL] <UDC app> → M_OFF
+2025-09-08 11:59:01,666 [INFO] [SERIAL] <serial monitor> Received command: M_OFF
+2025-09-08 11:59:01,690 [INFO] [SERIAL] <serial monitor> Stepper motor stopped
+2025-09-08 11:59:01,714 [INFO] [SERIAL] <serial monitor> Stepper motor stopped.
+2025-09-08 11:59:01,751 [INFO] [SERIAL] <serial monitor> <M_ON_C> Elapsed time: 40 seconds.
+2025-09-08 11:59:01,779 [INFO] [SERIAL] <serial monitor> Stepper motor stopped.
+2025-09-08 11:59:01,800 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 11:59:21,374 [INFO] [SERIAL] <UDC app> Serial monitor started on COM3
+2025-09-08 11:59:40,949 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 11:59:46,818 [INFO] [SERIAL] <UDC app> → C_ON
+2025-09-08 11:59:46,850 [INFO] [SERIAL] <serial monitor> Received command: C_ON
+2025-09-08 11:59:47,765 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to maxAngle
+2025-09-08 11:59:51,264 [INFO] [SERIAL] <UDC app> → C_OFF
+2025-09-08 11:59:51,291 [INFO] [SERIAL] <serial monitor> Received command: C_OFF
+2025-09-08 11:59:52,204 [INFO] [SERIAL] <serial monitor> Capsule Servo moved to minAngle
+2025-09-08 12:00:02,619 [INFO] [SERIAL] <UDC app> Serial monitor started on COM3
+2025-09-08 12:00:22,252 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:00:42,281 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:01:02,312 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:01:22,347 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:01:42,375 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:02:02,407 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:02:22,441 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45
+2025-09-08 12:02:42,470 [INFO] [SERIAL] <serial monitor> Capsule: 0	LD: 45

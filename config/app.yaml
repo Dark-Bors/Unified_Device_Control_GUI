@@ -1,3 +1,6 @@
+# app.yaml
+# Configuration file for Unified Device Control GUI
+
 app:
   name: "Unified Device Control GUI 2"
   version_tag: "v0.4.0-alpha"
@@ -10,25 +13,18 @@ serial:
   ping: "PING"
   pong: "PONG"
   eol: "\n"
-  scan_timeout_ms: 800
+  scan_timeout_ms: 1500
   retries: 1
 
 cameras:
-  cam_a:
-    index: 0
-    enabled_on_start: false
-    width: 640
-    height: 480
-    target_fps: 20
-  cam_b:
-    index: 1
-    enabled_on_start: false
-    width: 640
-    height: 480
-    target_fps: 20
+  cam_a: { index: 0, width: 640, height: 480, target_fps: 15, enabled_on_start: false, backend: "auto" }
+  cam_b: { index: 1, width: 640, height: 480, target_fps: 15, enabled_on_start: false, backend: "auto" }
+
+
   recording:
     folder: "captures"
     codec: "mp4v"
+
 
 logging:
   level: "INFO"
@@ -36,3 +32,15 @@ logging:
   rotate_mb: 10
   keep_files: 10
   also_log_serial: true
+
+
+adu:
+  product_id: 218
+  dll_dir: "utils/ontrak"
+  timeout_ms: 5000
+  # optional action_map override:
+  # action_map:
+  #   USB_ON: "SK3"
+  #   USB_OFF: "RK3"
+  #   LIGHT_ON: "SK1"
+  #   LIGHT_OFF: "RK1"
